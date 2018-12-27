@@ -1,0 +1,208 @@
+
+***************
+UNIVERSAL
+***************
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: grid;
+  grid-template-areas: 
+  "sidebar header header"
+  "sidebar graph graph"
+  "sidebar divide divide"
+  "sidebar table aside";
+  grid-template-rows: 2fr 3fr 15px 6fr;
+  grid-template-columns: 150px 2fr 1fr;
+}
+
+main {
+}
+
+/*////SIDEBAR////*/
+
+.image-container {
+  width: 80%;
+  margin: 10px auto;
+}
+.profile-pic {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  display: inline-block;
+  background-color: navy;
+}
+
+.user{
+  position: relative;
+  width: 100%;
+}
+
+/*////HEADER////*/
+
+header {
+  grid-area: header;
+  background-color: blue;
+}
+
+.top-bar {
+  background-color: pink;
+  display: grid;
+  grid-template-areas: 
+  "ham search plus cal bx";
+  grid-template-columns: 1fr 10fr 1fr 1fr 1fr;
+  padding: 1rem;
+}
+
+.side-collapse {
+  grid-area: ham;
+}
+
+.top-icon,
+.side-collapse {
+}
+
+.search {
+  grid-area: search;
+}
+
+.add {
+  grid-area: plus;
+}
+
+.cal {
+  grid-area: cal;
+}
+
+.boxes {
+  grid-area: bx;
+}
+
+/*////HEADING////*/
+.heading {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.heading-text {
+  margin: 2rem;
+}
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+h1 {
+  font-size: 1.5rem;
+}
+.heading-subtext {
+  display: flex;
+}
+
+h2,
+h3 {
+  font-size: 1rem;
+  font-weight: normal;
+  padding: .5rem;
+}
+
+.dot {
+  font-size: 3px;
+  padding: 1rem .5rem;
+}
+
+
+h3 {
+  color: #00a4ff;
+}
+
+.heading-buttons {
+  padding: 2rem, 1rem;
+}
+/*////nav////*/
+
+
+nav{
+  background-color: orange;
+
+}
+
+ul {
+  list-style: none;
+  text-transform: uppercase;
+}
+
+a {
+  
+}
+
+.main-nav-ul {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  padding: 1rem;
+}
+
+
+/*////GRAPHS////*/
+
+
+.graphs {
+  background-color: teal;
+  grid-area: graph;
+  display: flex;
+  height: 15rem;
+  overflow: hidden;
+}
+
+.circles {
+  width: 60%;
+}
+
+#cholder {
+  height: 100%;
+}
+
+.bar-graph{
+  width: 40%;
+  padding-right: 1rem;
+}
+
+#bholder {
+  height: 100%;
+}
+
+
+.page-divide {
+  background-color: yellow;
+  grid-area: divide;
+}
+
+.posting {
+  background-color: aqua;
+  grid-area: table;
+}
+
+
+.right-aside {
+  background-color: lime;
+  grid-area: aside;
+}
