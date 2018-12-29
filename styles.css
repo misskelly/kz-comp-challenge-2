@@ -24,31 +24,97 @@ body {
   "sidebar divide divide"
   "sidebar table aside";
   grid-template-rows: auto 3fr 15px 6fr;
-  grid-template-columns: 150px 2fr 1fr;
+  grid-template-columns: 250px 2fr 1fr;
   margin: 0;
   padding: 0;
   width: 100%;
 }
 
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: block;
+}
+
+a:visited {
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
 /*////SIDEBAR////*/
 
-.image-container {
-  margin: 10px auto;
-  width: 80%;
-}
-.profile-pic {
-  border-radius: 50%;
+.user{
+  border-bottom: 2px solid #212934;
+  height: 250px;
+  padding-top: 40px;
+  text-align: center;
   width: 100%;
 }
 
-.sidebar {
-  background-color: navy;
-  display: inline-block;
-  grid-area: sidebar;
+.name{
+  font-size: 1.5rem;
+  margin: 0;
+  padding-left: 10px;
 }
 
-.user{
-  position: relative;
+
+.profile-pic {
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.sidebar {
+  background-color: #334052;
+  color: #97A9BF;
+  display: inline-block;
+  grid-area: sidebar;
+  line-height: 3;
+}
+
+h5 {
+  font-weight: normal;
+  line-height: 1;
+  margin: 2rem 0 1rem 0;
+  padding-left: 40px;
+}
+
+.fw {
+  font-size: 1.5rem;
+  margin-right: 5px;
+  text-align: center;
+  width: 2.2rem;
+}
+
+.menu {
+  border-bottom: 2px solid #212934;
+  margin-top: 1rem;
+}
+
+.menu-item {
+  padding-left: 30px;
+  width: 100%;
+}
+
+.menu-item:hover {
+  color: white;
+  background-color: #212934;
+  border-left: 3px solid #00A4FF;
+}
+
+ul,
+.menu {
+    margin-top: 0;
+    padding: 0;
+}
+
+li,
+.menu {
   width: 100%;
 }
 
@@ -178,16 +244,10 @@ nav{
 
 }
 
-ul {
-  list-style: none;
-}
 
 
-a {
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: bold;
-}
+
+
 
 .main-nav-ul {
   display: flex;
