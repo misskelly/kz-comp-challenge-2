@@ -22,7 +22,7 @@
       <article class="side-menu">
         <div class="menu">
           <h5>
-           Main
+          Main
           </h5>
           <ul>
             <li>
@@ -98,16 +98,23 @@
     </aside>
     <header>
       <section class="top-bar">
-        <article class="side-collapse">
+        <article class="top-icon side-collapse">
           <a href="">
             <i class="fas fa-caret-left"></i>
             <i class="fas fa-bars"></i>
           </a>
         </article>
-        <article class="search">
-          <form>
-            <i class="fas fa-search"></i>
-            <input type="search" name="search">
+        <article class=" top-icon mag-glass">
+          <i class="fas fa-search"></i>
+        </article>
+        <article role="search" class="search">
+          <form action="#" method="get">
+            <fieldset class="search-fs">
+              <legend>Search this website:</legend>
+              <label for="search" class="search-row">
+                <input type="search" name="search" placeholder="Search for a job, task, or resume" maxlength="200" class="search-input" />
+              </label>
+            </fieldset>
           </form>
         </article>
         <article class="top-icon add">
