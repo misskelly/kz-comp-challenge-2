@@ -23,8 +23,7 @@ body {
   "sidebar graph graph"
   "sidebar divide divide"
   "sidebar table aside";
-  grid-template-rows: auto 3fr 15px 6fr;
-  grid-template-columns: 250px 2fr 1fr;
+  grid-template-columns: 1fr 4fr 2fr;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -49,7 +48,7 @@ ul {
 
 .user{
   border-bottom: 2px solid #212934;
-  height: 250px;
+  height: 200px;
   padding-top: 40px;
   text-align: center;
   width: 100%;
@@ -66,7 +65,7 @@ ul {
   border-radius: 50%;
   display: block;
   margin: 0 auto;
-  width: 50%;
+  width: 45%;
 }
 
 .sidebar {
@@ -74,7 +73,7 @@ ul {
   color: #97A9BF;
   display: inline-block;
   grid-area: sidebar;
-  line-height: 3;
+  line-height: 3.3;
 }
 
 h5 {
@@ -121,18 +120,18 @@ li,
 /*////HEADER////*/
 
 header {
-  background-color: lightblue;
   grid-area: header;
 }
 
 .top-bar {
- background-color: pink;
+ background-color: #FFFFFF;
   display: grid;
   grid-template-areas: 
-  "ham search plus cal bx";
-  grid-template-columns: 1fr 10fr 1fr 1fr 1fr;
-  padding: 1.5rem;
-  border-bottom: 2px solid #A4AEBC;
+  "ham mag search plus cal bx";
+  grid-template-columns: 1fr .7fr 9fr 1fr 1fr 1fr;
+  border-bottom: 2px solid #E6EBF3;
+  position: fixed;
+  width: 86%;
 }
 
 .side-collapse {
@@ -140,15 +139,65 @@ header {
   grid-area: ham;
 }
 
+.l-tri {
+  color: #00A4FF;
+}
+
 .top-icon {
   color: #7A8595;
   text-align: center;
-  font-size: 1.5rem;
-  /*border-left: 2px solid #A4AEBC;;*/
+  display: block;
+  font-size: 1.7rem;
+  border-left: 2px solid #E6EBF3;
+  line-height: 2.5;
+}
+
+.mag-glass {
+  grid-area: mag;
+  padding: 0;
+  margin-top: 1.5rem;
 }
 
 .search {
   grid-area: search;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+}
+
+legend {
+  display: none;
+}
+input,
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: none;
+  cursor: pointer; 
+  padding: 0;
+}
+
+.search-input {
+  color: #A4AEBC;
+  font-size: 16px;
+  width: 100%;
+  display: block; 
+  width: 100%;
+  height: 3rem;
+  margin-top: 2rem;
+}
+
+.tb-click {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+}
+
+.tb-click:hover {
+  color: #FFFFFF;
+  background-color: #00A4FF;
 }
 
 .add {
@@ -161,27 +210,45 @@ header {
 
 .boxes {
   grid-area: bx;
+  display: block;
 }
 
 /*////HEADING////*/
 .heading {
+  background-color: #FFFFFF;
   display: flex;
   justify-content: space-between;
   width: 100%;
+  padding-top: 5rem;
+}
+.h-btn:hover {
+  color: #FFFFFF;
+  background-color: #00A4FF;
 }
 
 .heading-text {
-  margin: 2rem;
+  margin: 4rem 0 2rem 4rem;
+  padding-top: 1rem;
 }
 
 
 h1 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: normal;
   margin: 0;
+  color: #3F4857;
 }
+
 .heading-subtext {
   display: flex;
+}
+
+.location {
+  color: #6D7A8B;
+}
+
+.here {
+  padding-right: .5rem;
 }
 
 h2,
@@ -193,45 +260,53 @@ h3 {
 }
 
 .dot {
+  color: #6d7a8b;
   font-size: 3px;
   padding: 1rem .5rem;
 }
 
 
 .preview {
-  color: #00a4ff;
+  color: #00A4FF;
 }
 
 .heading-buttons {
   align-items: center;
+  color: #7A8595;
   display: flex;
   justify-content: space-around;
-  width: 30%;
+  padding-right: 3rem;
+  width: 27%;
 }
 
 .op {
   color: #78CA08;
-  font-size: .7rem;
+  font-size: 1rem;
+  margin-right: 2px;
 }
 
 .open {
   border-radius: 50px;
+  color: #3F4857;
+  font-weight: bold;
+  font-size: 1rem;
   text-transform: uppercase;
-  width: 6.5rem;
+  width: 7rem;
 }
 
 .open,
 .circle {
   background-color: #FFFFFF;
-  border: 2px solid #A4AEBC;
+  border: 2px solid #E6EBF3;
   height: 3rem;
   text-align: center;
-  padding-top: .6rem;
+  padding-top: .7rem;
 }  
 
 .circle {
-  width: 3rem;
   border-radius: 50%;
+  font-size: 1.2rem;
+  width: 3rem;
 }
 
 
@@ -240,25 +315,27 @@ h3 {
 
 
 nav{
-  background-color: orange;
-
+  background-color: #FFFFFF;
+  padding-left: 4rem;
 }
 
-
-
-
-
-
 .main-nav-ul {
+  color: #6D7A8B;
   display: flex;
   justify-content: space-around;
   width: 80%;
-  padding: 1rem;
+}
+.nav-link {
+  padding-bottom: 1rem;
+}
+
+.nav-link:hover {
+  color: #3F4857;
+  border-bottom: 3px solid #00A4FF;
 }
 
 
 /*////GRAPHS////*/
-
 
 .graphs {
   background-color: teal;
@@ -285,19 +362,185 @@ nav{
   height: 100%;
 }
 
+/*////page divide////*/
+
 
 .page-divide {
-  background-color: yellow;
+  display: flex;
+  align-items: center;
+  background-color: #EAF1F6;
   grid-area: divide;
 }
 
+.carrot {
+  border: 2px solid #9eacc1;
+  border-radius: 50%;
+  height: 2.2rem;
+  width: 2.2rem;
+  text-align: center;
+  padding-top: .4rem;
+  display: block;
+  color: #9eacc1;
+  background: #FFFFFF;
+}
+
+hr {
+  border-top: 2px solid #9eacc1;
+  border-bottom: none;
+  width: 44%;
+  display: block;
+}
+
 .posting {
-  background-color: aqua;
+  background-color: #EAF1F6;
   grid-area: table;
+  padding: 2rem 0 0 4rem;
+  display: flex;
+}
+
+.table-edit {
+  padding-left: 1.5rem;
+}
+
+.edit-box {
+  background-color: #8D99AB;
+  width: 6rem;
+  padding: .5rem 1rem;
+  border-radius: 2px;
+}
+
+.edit-box:hover {
+  background-color: #00A4FF;
+}
+
+th, td {
+  border-bottom: 1px solid #ddd;
+  padding: 2rem;
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  background: #FFFFFF;
+  border-collapse: collapse; 
+  border-radius: 3px;
+  overflow: hidden;
+  color: #6C7D97;
+}
+
+thead {
+  background: #6C7D97;
+  color: #FFFFFF;
+  font-size: 1.1rem;
+}
+.table-heading {
+  width: 25%;
+}
+
+th {
+  text-transform: uppercase;
+  text-align: left;
+  padding: 2rem 0 2rem 3rem;
 }
 
 
+.salary {
+  font-weight: bold;
+  background: #FFFFFF;
+
+}
+
+td {
+  font-size: 1.1rem;
+  padding: 2rem 3rem 2rem 2rem;
+}
+
+/*////RIGHT ASIDE////*/
+
 .right-aside {
-  background-color: lime;
+  background-color: #EAF1F6;
   grid-area: aside;
+  padding-top: 2rem;
+  color: #6C7D97;
+}
+
+
+.sm-btn {
+  width: 70%;
+  margin: 0 auto 1rem auto;
+  border-radius: 3px;
+  padding: 1rem 1.5rem;
+  text-transform: none;
+  color: white;
+  font-size: 1.1rem;
+}
+
+.sm-icon {
+  margin-right: 3rem;
+  font-size: 1.3rem;
+}
+
+.fb {
+  background: #436fc8;
+}
+
+.twitter {
+  background: #00abf5;
+}
+
+.in {
+  background: #0080c2;
+}
+
+.share {
+  width: 100%;
+  padding: 3rem 0 0 4rem;
+  font-size: 1.4rem;
+}
+
+.sh {
+  margin-right: .5rem;
+}
+
+h4 {
+  display: inline;
+}
+
+.description {
+  font-size: 1rem;
+  padding-bottom: 1rem;
+  color: #C1CAD1;
+}
+
+.link {
+  height: 3rem;
+  width: 78%;
+  padding-left: 1rem;
+}
+
+.copy {
+  height: 3rem;
+  margin: 0;
+  width: 20%;
+  background: #00bdc3;
+  color: #FFFFFF
+}
+.side-form {
+  width: 80%;
+  padding-bottom: 3rem;
+  border-bottom: solid 2px #C1CAD1;
+}
+
+.email {
+  border: none;
+}
+
+.email-address {
+  color: inherit;
+  background-color: #FFFFFF;
+  width: 80%;
+  border-radius: 2px;
+  padding:1rem;
+  text-transform: none;
+  font-size: .9rem;
 }
