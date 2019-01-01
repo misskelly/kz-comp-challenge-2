@@ -385,6 +385,7 @@ nav{
 }
 
 hr {
+  color: #C1CAD1;
   border-top: 2px solid #9eacc1;
   border-bottom: none;
   width: 44%;
@@ -426,6 +427,7 @@ table {
   border-radius: 3px;
   overflow: hidden;
   color: #6C7D97;
+  box-shadow:  1px 1px 1px lightgrey;
 }
 
 thead {
@@ -447,7 +449,7 @@ th {
 .salary {
   font-weight: bold;
   background: #FFFFFF;
-
+  border: none;
 }
 
 td {
@@ -460,7 +462,7 @@ td {
 .right-aside {
   background-color: #EAF1F6;
   grid-area: aside;
-  padding-top: 2rem;
+  padding: 2rem 0 4rem 0;
   color: #6C7D97;
 }
 
@@ -509,13 +511,14 @@ h4 {
 .description {
   font-size: 1rem;
   padding-bottom: 1rem;
-  color: #C1CAD1;
+  color: #9eacc1;  
 }
 
 .link {
   height: 3rem;
   width: 78%;
   padding-left: 1rem;
+  box-shadow:  1px 1px 1px lightgrey;
 }
 
 .copy {
@@ -543,4 +546,5 @@ h4 {
   padding:1rem;
   text-transform: none;
   font-size: .9rem;
+  box-shadow:  1px 1px 1px lightgrey;
 }
