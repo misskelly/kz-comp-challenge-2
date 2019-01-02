@@ -55,7 +55,7 @@ ul {
 }
 
 .name{
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   margin: 0;
   padding-left: 10px;
 }
@@ -70,21 +70,22 @@ ul {
 
 .sidebar {
   background-color: #334052;
-  color: #97A9BF;
+  color: #97A4B7;
   display: inline-block;
   grid-area: sidebar;
   line-height: 3.3;
 }
 
 h5 {
-  font-weight: normal;
+  color: #586983;
+  font-size: 1.1rem;
   line-height: 1;
   margin: 2rem 0 1rem 0;
   padding-left: 40px;
 }
 
 .fw {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   margin-right: 5px;
   text-align: center;
   width: 2.2rem;
@@ -241,6 +242,7 @@ h1 {
 
 .heading-subtext {
   display: flex;
+  padding-bottom: 2rem;
 }
 
 .location {
@@ -404,10 +406,11 @@ hr {
 }
 
 .edit-box {
-  background-color: #8D99AB;
+  background-color: #7C8CA4;
   width: 6rem;
   padding: .5rem 1rem;
-  border-radius: 2px;
+  border-radius: 3px;
+  box-shadow:  .5px 1px 1px #505C6D;
 }
 
 .edit-box:hover {
@@ -495,8 +498,8 @@ td {
 }
 
 .share {
-  width: 100%;
-  padding: 3rem 0 0 4rem;
+  width: 70%;
+  margin: 2rem auto;
   font-size: 1.4rem;
 }
 
@@ -516,20 +519,23 @@ h4 {
 
 .link {
   height: 3rem;
-  width: 78%;
+  width: 75%;
   padding-left: 1rem;
   box-shadow:  1px 1px 1px lightgrey;
+  border-radius: 3px;
 }
 
 .copy {
   height: 3rem;
   margin: 0;
-  width: 20%;
+  width: 23%;
   background: #00bdc3;
-  color: #FFFFFF
+  color: #FFFFFF;
+  border-radius: 3px;
 }
+
 .side-form {
-  width: 80%;
+  width: 100%;
   padding-bottom: 3rem;
   border-bottom: solid 2px #C1CAD1;
 }
@@ -548,3 +554,25 @@ h4 {
   font-size: .9rem;
   box-shadow:  1px 1px 1px lightgrey;
 }
+
+/*////MEDIA QUERIES////*/
+
+@media all and ( min-width: 1201px) and (max-width: 1300px){
+  .sm-btn,
+  .share {
+    width: 85%;
+  }
+  .heading-buttons {
+    width: 35%;
+  }
+}
+
+@media
+
+/*@media all and (max-width: 719px) {
+  /* line 34, /*sass/_adaptive_responsive_combined.scss */
+  /*.adaptive #overview #layout_1,*/
+  /*.responsive #overview #layout_1 {*/
+    /*display: block; } }*/
+/*@media all and (min-width: 720px) and (max-width: 959px) {*//*/
+
